@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mv ~/.bashrc ~/.bashrc.bak
+cat bash.ext >> ~/.bashrc
+
+if [ -e ~/.vimrc ]; then
+    mv ~/.vimrc ~/.vimrc.bak
+fi
+cat vim.template > ~/.vimrc

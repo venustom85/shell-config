@@ -1,0 +1,19 @@
+"if version >= 700
+"	hi CursorLIne cterm=bold ctermbg=DarkBlue
+"endif
+set nu
+set autoindent
+set cindent
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set hlsearch
+syntax on
+highlight Cursor guibg=Green guifg=NONE
+highlight lCursor guibg=Cyan guifg=NONE
+highlight Constant gui=NONE guibg=grey95
+highlight Special gui=NONE guibg=grey95
+hi Normal guibg=#00204f guifg=grey95
+hi comment guifg=Green
+set guifont=Courier\ 10\ Pitch\ 11
+set backspace=2

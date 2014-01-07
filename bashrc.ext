@@ -1,0 +1,22 @@
+
+export CLASSPATH=.:$CLASSPATH
+export EDITOR=vim
+
+alias ls='ls -F --color=auto'
+
+function gvim()
+{
+    /usr/bin/gvim -f "$@" &
+}
+
+function vi()
+{
+    /usr/bin/vim -X "$@"
+}
+
+function cd() 
+{ 
+	builtin cd "$@"; 
+	ls; 
+}
+
